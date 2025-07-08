@@ -1,4 +1,4 @@
-import { shopify } from "../shopify.server";
+import shopify from "../shopify.server";
 
 export const action = async ({ request }) => {
   try {
