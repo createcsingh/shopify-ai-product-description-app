@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e248541b43ed03e2fe9a8bc09bf40ac2"
+name = "AI Product Description Writer"
+handle = "ai-product-description-writer"
+application_url = "https://congratulations-los-crew-dimensions.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = ["https://congratulations-los-crew-dimensions.trycloudflare.com/auth/callback", "https://congratulations-los-crew-dimensions.trycloudflare.com/auth/shopify/callback", "https://congratulations-los-crew-dimensions.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false
