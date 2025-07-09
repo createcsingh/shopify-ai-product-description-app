@@ -3,7 +3,7 @@
 client_id = "e248541b43ed03e2fe9a8bc09bf40ac2"
 name = "AI Product Description Writer"
 handle = "ai-product-description-writer"
-application_url = "https://iran-washer-maintaining-connections.trycloudflare.com"
+application_url = "https://effect-consolidation-formats-saskatchewan.trycloudflare.com"
 embedded = true
 
 [build]
@@ -26,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products"
 
 [auth]
-redirect_urls = ["https://iran-washer-maintaining-connections.trycloudflare.com/auth/callback", "https://iran-washer-maintaining-connections.trycloudflare.com/auth/shopify/callback", "https://iran-washer-maintaining-connections.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://effect-consolidation-formats-saskatchewan.trycloudflare.com/auth/callback", "https://effect-consolidation-formats-saskatchewan.trycloudflare.com/auth/shopify/callback", "https://effect-consolidation-formats-saskatchewan.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false
